@@ -51,6 +51,14 @@ const app = new Vue({
         " " +
         ticketPluralization
       );
+    },
+    formIsValid: function() {
+      return (
+        this.firstName &&
+        this.lastName &&
+        this.email &&
+        this.purchaseAgreementSigned
+      );
     }
   },
   watch: {
